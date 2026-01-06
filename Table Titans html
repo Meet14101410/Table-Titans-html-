@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Titans</title>
+  <style>
+    body{font-family:Arial;text-align:center;background:#f3f3ff}
+    .card{display:inline-block;margin:10px;padding:20px;background:#fff;border-radius:10px;box-shadow:0 0 10px #aaa}
+  </style>
+</head>
+<body>
+  <h1>Table Titans</h1>
+  <p>Click an element to score points!</p>
+
+  <div class="card">H</div>
+  <div class="card">O</div>
+  <div class="card">Na</div>
+  <div class="card">Cl</div>
+
+  <script>
+    document.querySelectorAll('.card').forEach(c=>{
+      c.onclick=()=>alert("You selected: "+c.innerText);
+    });
+  </script>
+</body>
+</html>
